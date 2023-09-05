@@ -1,0 +1,492 @@
+@import url("https://encore.scdn.co/fonts/CircularSp-Bold-fe1cfc14b7498b187c78fa72fb72d148.woff2");
+@import url("https://encore.scdn.co/fonts/CircularSp-Book-4eaffdf96f4c6f984686e93d5d9cb325.woff2");
+* {
+  margin: 0px;
+  padding: 0px;
+}
+main {
+  font-family: CircularSp, spotify-circular, Helvetica, Arial, sans-serif;
+}
+/* CTA */
+.cta {
+  width: 100vw;
+  background-color: #1d75de;
+  padding-top: 72px;
+  padding-bottom: 40px;
+}
+
+/* Benefits */
+.benefits {
+  width: 100vw;
+  background-color: white;
+  padding-top: 72px;
+  padding-bottom: 40px;
+}
+.benefits article ul {
+  display: flex;
+  justify-content: center;
+  gap: 100px;
+}
+
+.benefits article ul li {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  list-style-type: none;
+  min-width: 200px;
+}
+
+/* Pricing */
+.pricing {
+  width: 100vw;
+  background-color: #efefef;
+  padding-top: 72px;
+  padding-bottom: 40px;
+}
+
+.pricing-cards {
+  display: flex;
+  gap: 20px;
+}
+
+.pricing-cards .card .card-body ul {
+  padding-inline: 20px;
+}
+.pricing-cards .card .card-body ul li {
+  margin-block: 10px;
+  list-style-image: url("check-fill.png");
+}
+.pricing-cards .card .card-body ul li::marker {
+  vertical-align: middle;
+}
+
+/* Footer */
+.footer {
+  width: 100vw;
+  background-color: #000;
+  padding-top: 72px;
+  padding-bottom: 40px;
+}
+
+.footer article nav {
+  display: grid;
+  grid-template-areas:
+    "logo company community link top buttons"
+    "c c c c c language"
+    "l l l l l l";
+}
+
+.company ul {
+  list-style-type: none;
+}
+.company ul li {
+  margin-block: 20px;
+}
+.company ul li:first-child {
+  text-transform: uppercase;
+  color: #919496;
+  font-size: 0.8rem;
+}
+.company ul li:not(:first-child):hover {
+  color: #1ed760;
+}
+.communities ul {
+  list-style-type: none;
+}
+.communities ul li {
+  margin-block: 20px;
+}
+.communities ul li:first-child {
+  text-transform: uppercase;
+  color: #919496;
+  font-size: 0.8rem;
+}
+.communities ul li:not(:first-child):hover {
+  color: #1ed760;
+}
+.links ul {
+  list-style-type: none;
+}
+.links ul li {
+  margin-block: 20px;
+}
+.links ul li:first-child {
+  text-transform: uppercase;
+  color: #919496;
+  font-size: 0.8rem;
+}
+
+.links ul li:not(:first-child):hover {
+  color: #1ed760;
+}
+
+.language {
+  grid-area: language;
+  text-align: end;
+}
+
+.language a {
+  color: #919496;
+  text-decoration: none;
+}
+
+.f-links {
+  margin-top: 20px;
+  grid-area: l;
+  display: flex;
+  justify-content: space-between;
+}
+
+.f-links ul {
+  color: #919496;
+  list-style-type: none;
+  display: flex;
+  gap: 20px;
+}
+
+.f-links ul li a {
+  color: #919496;
+  text-decoration: none;
+}
+
+.f-links li a:hover {
+  color: #1ed760;
+}
+
+.f-links a {
+  color: #919496;
+  text-decoration: none;
+}
+
+.f-links a:hover {
+  color: #1ed760;
+}
+
+article {
+  width: 1170px;
+  margin: 0 auto;
+  padding-inline-start: 15px;
+}
+
+nav {
+  font-family: CircularSp, spotify-circular, Helvetica, Arial, sans-serif;
+  padding-block: 20px;
+  background-color: #000;
+}
+
+.top-nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+.top-nav ul {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+.top-nav ul li {
+  list-style-type: none;
+}
+
+.top-nav ul li a:hover {
+  color: #1ed760;
+}
+
+.top-nav ul li a {
+  color: white;
+  text-decoration: none;
+}
+/* Utility classes */
+.list-separator {
+  font-size: 1.5rem;
+  color: white;
+  font-weight: 100;
+}
+
+.text-decoration-none {
+  text-decoration: none;
+}
+
+.spacer {
+  margin-bottom: 72px;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.w-100 {
+  width: 100%;
+}
+
+.w-80 {
+  width: 80% !important;
+}
+
+.w-60 {
+  width: 60% !important;
+}
+
+.my-1 {
+  margin-block: 10px;
+}
+.my-2 {
+  margin-block: 20px;
+}
+.mb-1 {
+  margin-bottom: 10px;
+}
+.mb-5 {
+  margin-bottom: 72px;
+}
+
+.m-0-auto {
+  margin: 0 auto;
+}
+
+.round-image-sm {
+  border-radius: 50%;
+}
+
+hr {
+  margin-block: 20px;
+  border-width: 1px;
+  color: #000;
+}
+
+/* Font-sizing */
+.h1 {
+  display: block;
+  padding-block: 20px;
+  font-size: 2.5rem;
+  font-weight: 900;
+}
+
+.h3 {
+  display: block;
+  padding-block: 2px;
+  font-size: 1.8rem;
+  font-weight: 700;
+}
+
+.h4 {
+  display: block;
+  padding-block: 2px;
+  font-size: 1.4rem;
+  font-weight: 600;
+}
+
+.h5 {
+  display: block;
+  padding-block: 2px;
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+p {
+  padding-block: 2px;
+}
+
+.subtitle {
+  display: block;
+  font-size: 1.4rem;
+  font-weight: 300;
+}
+
+.subtitle-md {
+  display: block;
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+/* Alignment */
+.text-center {
+  text-align: center;
+}
+
+.justify-space-between {
+  justify-content: space-between;
+}
+
+/* Font-colors */
+.text-white {
+  color: white;
+}
+
+.text-dark {
+  color: rgb(10, 10, 10);
+}
+
+.text-light {
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.text-xs {
+  font-size: 0.7rem;
+}
+
+.title-md {
+  display: block;
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin-block: 20px;
+}
+
+/* Button designs */
+.btn {
+  padding-inline: 30px;
+  padding-block: 15px;
+  border: none;
+  border-radius: 500px;
+  height: 50px;
+}
+
+.button-bg-dark {
+  background-color: #000;
+  color: white;
+}
+
+.button-bg-none {
+  background-color: rgba(0, 0, 0, 0);
+}
+
+.button-outline-none {
+  border: none;
+}
+
+.button-outline-white {
+  color: white;
+  border: 2px solid white;
+}
+
+.button-outline-primary {
+  color: rgb(13, 114, 234);
+  border: 1px solid rgb(13, 114, 234);
+}
+
+.button-group {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  height: 120px;
+}
+
+.button-padding {
+  padding-block: 10px;
+  padding-inline: 10px;
+}
+/* Cards */
+.card {
+  width: 100%;
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: rgb(255, 255, 255) 0px -9px 0px 0px,
+    rgba(0, 0, 0, 0.3) 0px 0px 8px;
+}
+
+.card-header {
+  height: 123px;
+  width: auto;
+}
+
+/* One-time use classes */
+.benefit1 {
+  background-image: url("https://i.scdn.co/image/ab671c3d0000f43009302fbaf6259b4c117c704f");
+  background-size: cover;
+  height: 150px;
+  width: 150px;
+}
+.benefit2 {
+  background-image: url("https://i.scdn.co/image/ab671c3d0000f43098292b95d24a697c20df5137");
+  background-size: cover;
+  height: 150px;
+  width: 150px;
+}
+.benefit3 {
+  background-image: url("https://i.scdn.co/image/ab671c3d0000f4306998d3ffd58aad6da6afdf67");
+  background-size: cover;
+  height: 150px;
+  width: 150px;
+}
+.benefit4 {
+  background-image: url("https://content-tooling.spotifycdn.com/images/33dd9893-88d5-43be-870e-20ed29c3128d_enhance_icon_(1).svg");
+  background-size: cover;
+  height: 150px;
+  width: 150px;
+}
+
+.pricing-card {
+  height: 200px;
+  width: auto;
+}
+
+.f-logo {
+  color: white;
+  grid-area: logo;
+}
+
+.company {
+  grid-area: company;
+}
+
+.communities {
+  grid-area: community;
+}
+
+.links {
+  grid-area: link;
+}
+
+.social-buttons {
+  grid-area: buttons;
+  display: flex;
+  justify-content: end;
+  gap: 20px;
+}
+
+.ig-button {
+  background: no-repeat
+      url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 448 448' fill='%23222326'%3E%3Cpath d='M0 230.126v-.793c.016 55.974.294 63.853 1.344 87.03 3.733 81.349 48.87 126.56 130.293 130.293C155.55 447.739 163.165 448 224 448H0V230.126zm229.242-189.75c55.006.014 62.368.256 85.291 1.307 60.704 2.762 89.059 31.565 91.822 91.821 1.05 22.905 1.275 30.266 1.287 85.272v10.487c-.014 55.022-.255 62.365-1.287 85.27-2.782 60.2-31.062 89.059-91.822 91.822-23.159 1.06-30.399 1.297-87.005 1.306h-7.054c-56.572-.009-63.848-.245-86.989-1.306-60.853-2.782-89.058-31.715-91.821-91.84-1.05-22.905-1.292-30.249-1.306-85.271v-8.77c.01-56.572.263-63.83 1.306-86.989 2.781-60.237 31.061-89.058 91.821-91.821 22.923-1.032 30.268-1.274 85.273-1.287h10.484zm-5.242 68.6c-63.523 0-115.024 51.501-115.024 115.024S160.477 339.043 224 339.043 339.024 287.54 339.024 224c0-63.523-51.501-115.024-115.024-115.024zm0 40.357c41.235 0 74.667 33.432 74.667 74.667 0 41.253-33.432 74.667-74.667 74.667S149.333 265.253 149.333 224c0-41.235 33.432-74.667 74.667-74.667zM343.579 77.56c-14.859 0-26.899 12.04-26.899 26.88s12.04 26.88 26.899 26.88c14.84 0 26.861-12.04 26.861-26.88s-12.021-26.88-26.861-26.88zM448 224v224H224c60.835 0 68.47-.261 92.363-1.344 81.274-3.733 126.597-48.87 130.274-130.293C447.74 292.469 448 284.835 448 224zm-1.344-92.344c-3.659-81.275-48.85-126.56-130.275-130.293C293.187.294 285.307.016 229.333 0H448v224c0-60.835-.261-68.45-1.344-92.344zM0 0h218.667c-55.973.016-63.834.294-87.011 1.344C50.306 5.077 5.096 50.214 1.363 131.637.299 154.722.019 162.62 0 217.873V0z'/%3E%3C/svg%3E"),
+    currentColor;
+  width: 24px;
+  height: 24px;
+}
+
+.twitter-button {
+  background: no-repeat
+      url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 448 448' fill='%23222326'%3E%3Cpath d='M448 0v448H0V0h448zM299.75 64c-22.333 0-41.375 7.875-57.125 23.625S219 122.417 219 144.75c0 6 .667 12.167 2 18.5-33-1.667-63.958-9.958-92.875-24.875S74.667 103.583 54.5 78.75c-7.333 12.5-11 26.083-11 40.75 0 13.833 3.25 26.667 9.75 38.5 6.5 11.833 15.25 21.417 26.25 28.75-12.717-.49-24.637-3.77-35.76-9.841L43 176.5v1c0 19.5 6.125 36.625 18.375 51.375s27.708 24.042 46.375 27.875a83.54 83.54 0 01-21.25 2.75c-4.667 0-9.75-.417-15.25-1.25 5.167 16.167 14.667 29.458 28.5 39.875 13.833 10.417 29.5 15.792 47 16.125-29.333 23-62.75 34.5-100.25 34.5-7.167 0-13.667-.333-19.5-1C64.5 371.917 105.833 384 151 384c28.667 0 55.583-4.542 80.75-13.625s46.667-21.25 64.5-36.5 33.208-32.792 46.125-52.625c12.917-19.833 22.542-40.542 28.875-62.125 6.333-21.583 9.5-43.208 9.5-64.875 0-4.667-.083-8.167-.25-10.5 15.833-11.5 29.333-25.417 40.5-41.75-15.5 6.667-31 10.833-46.5 12.5C392 104 403.833 89.167 410 70c-16 9.5-33.083 16-51.25 19.5-16-17-35.667-25.5-59-25.5z'/%3E%3C/svg%3E"),
+    currentColor;
+  width: 24px;
+  height: 24px;
+}
+
+.facebook-button {
+  background: no-repeat
+      url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 448 448' fill='%23222326'%3E%3Cpath d='M448 0v448H0V0h448zM276.877 16h-1.127c-28.833 0-51.917 8.542-69.25 25.625-17.16 16.912-25.826 40.645-25.997 71.197l-.003.928v54.5h-63.75v74h63.75V432H257V242.25h63.5l9.75-74H257V121c0-12 2.5-21 7.5-27 4.923-5.908 14.37-8.907 28.342-8.998L293.5 85h39.25V19c-13.085-1.938-31.336-2.938-54.754-2.997l-1.12-.003z'/%3E%3C/svg%3E"),
+    currentColor;
+  width: 24px;
+  height: 24px;
+}
+
+.rounded-bg {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(34, 35, 38);
+  height: 54px;
+  width: 54px;
+  border-radius: 50%;
+  color: white;
+}
+
+.rounded-bg:hover {
+  color: #1ed760;
+}
+
+.language a:hover {
+  color: #1ed760;
+}
